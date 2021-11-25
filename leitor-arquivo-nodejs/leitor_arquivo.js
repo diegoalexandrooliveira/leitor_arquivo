@@ -13,7 +13,7 @@ async function processLineByLine() {
     console.time('teste')
     await producer.connect()
 
-    fs.createReadStream('/home/diegoalexandro/dev/workspace/leitor_arquivo/arquivo.dat')
+    fs.createReadStream('/home/diegoalexandro/dev/workspace/leitor_arquivo/arquivo_10k.dat')
         .pipe(es.split())
         .pipe(es.mapSync(line => {
             split = line.split('|')

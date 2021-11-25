@@ -22,8 +22,8 @@ public class GeradorDeArquivo {
         String detalhe2 = "003|%s|%s|%s";
         String dataLocal = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE);
 
-        BufferedWriter writer = new BufferedWriter(new FileWriter("/home/diegoalexandro/dev/workspace/poc-leitor-arquivo/arquivo_menor.dat"));
-        for (int i = 0; i < 10; i++) {
+        BufferedWriter writer = new BufferedWriter(new FileWriter("/home/diegoalexandro/dev/workspace/leitor_arquivo/arquivo_10k.dat"));
+        for (int i = 0; i < 10_000; i++) {
             System.out.println(i);
             escreveLinha(cabecalho, detalhe1, detalhe2, dataLocal, writer);
         }

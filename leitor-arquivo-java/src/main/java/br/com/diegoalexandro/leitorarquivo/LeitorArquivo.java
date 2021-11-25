@@ -24,7 +24,7 @@ public class LeitorArquivo implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         try {
             long inicio = System.currentTimeMillis();
-            final LineIterator lineIterator = FileUtils.lineIterator(new File("/home/diegoalexandro/dev/workspace/leitor_arquivo/arquivo.dat"));
+            final LineIterator lineIterator = FileUtils.lineIterator(new File("/home/diegoalexandro/dev/workspace/leitor_arquivo/arquivo_10k.dat"));
             while (lineIterator.hasNext()) {
                 String line = lineIterator.nextLine();
                 String[] split = line.split("\\|");

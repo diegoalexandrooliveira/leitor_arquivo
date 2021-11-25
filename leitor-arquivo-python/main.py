@@ -45,4 +45,4 @@ def envia_kafka_detalhe2(detalhe2):
     producer.send("recebiveis_detalhe2", detalhe2.__dict__)
 
 
-leArquivo('/home/diegoalexandro/dev/workspace/leitor_arquivo/arquivo.dat')
+leArquivo('/home/diegoalexandro/dev/workspace/leitor_arquivo/arquivo_10k.dat')
